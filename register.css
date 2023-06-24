@@ -1,0 +1,44 @@
+body {
+    color: white;
+    background-color: rgb(14, 14, 14);
+    
+}
+
+
+.mai {
+    text-align: justify;
+    padding: 0;
+    margin-top: 8rem;
+    background-color: rgb(24, 24, 24);
+    border-radius: 10px;
+    border: 2px solid rgb(199, 199, 199);
+    max-width: 650px;
+    margin-bottom: 2rem;
+    /* padding-top: 10rem; */
+    
+}
+
+
+
+.mai h4 {
+    text-align: center;
+    line-height: 4;
+    border-bottom: 3px solid whitesmoke;
+    width: 100%;
+}
+
+input {
+    padding-left: 10px;
+    width: 100%;
+    background-color: rgb(46, 46, 46);
+    color: aliceblue;
+    border: none;
+    line-height: 2;
+    margin-bottom: 5px;
+    border-radius: 3px;
+}
+
+#agree {
+    width: auto;
+    margin-top: 20px;
+}

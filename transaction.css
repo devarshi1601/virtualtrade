@@ -1,0 +1,13 @@
+table{
+    text-align: center;
+    margin-left:28rem;
+    margin-top:5rem;
+    border: 2px solid white;
+}
+@media (max-width:855px) {
+    table{
+        text-align: center;
+        margin-left: 25px;
+        font-size: 15px;
+    }
+}

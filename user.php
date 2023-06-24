@@ -1,0 +1,435 @@
+<?php include('rel.php');
+include('data.php');
+include('hdfc.php');
+include('infy.php');
+include('itc.php');
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Practise2trade</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+  
+    
+</head>
+
+<body>
+    <div class="nav" id="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+            <a class="nav-title" href="#" style="text-decoration: none;">
+                <img src="logo.png" alt="" id="logo">
+            </a>
+        </div>
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="">Exchange</a>
+            
+           
+            
+            <a href="#">Finance</a>
+            <a href="">Trade</a>
+            <a href="buystock.php">Buy Stock</a>
+            <a href="sellstock.php">Sell Stock</a>
+            <a href="transactions.php">Transaction History</a>
+            <a href="">Report</a>
+            <a href="">Account</a>
+        </div>
+    </div>
+    
+    
+        <div class="container2" id="features">
+            
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <!-- <img src="container-img.png" alt=""style="position: absolute;"> -->
+                <div class="carousel-inner">
+                    
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <div class="carousel-caption content2">
+                            <h1 class="head1">Take the world's best stock market site.</h1>
+                            <h5 class="head2">dummy text</h5>
+                            <a href="#" class="button">Start Now</a>
+                            
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-caption content2">
+                            <h1 class="head1">The Feature of Financing technology is here</h1>
+                            <h5 class="head2">It is a long Establish fact that a reader will be distracted.</h5>
+                            <a href="#" class="button">Get In Touch</a>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            </div>
+            <div class="container3">
+                  <h1>WELCOME TO Tradebox</h1>
+                  <p>Tradebox is offering new Bitcoin cryptocurrencies to the world market. We serve our members with products built in a fairer, more accessible, and efficient manner.</p>
+
+                   <p> We are a decentralized exchange (DEX) focused on offering a premier trading experience. </p>
+            </div>
+                                
+   
+            <div class="container4" id="participate">
+                <section class="hero__stocks__wrapper">
+                    <div class="hero__stocks container">
+                        <div class="stocks__card">
+                            <div class="card__top">
+                                <div>
+                                    <i><img src="https://assets-netstorage.groww.in/stock-assets/logos/GSTK500325.png" alt="">
+                                    </i>
+                                   
+                                </div>
+                
+                                <div class="card__heading">
+                                    <h6>REL</h6>
+                                    <span>Reliance</span>
+                                </div>
+                
+                            </div>
+                
+                            <div class="card__bottom">
+                                <h6><?php echo $price;?></h6>
+                                <h4><?php echo $percentChange;?>
+                                </h4>
+                            </div>
+                        </div>
+                
+                        <div class="stocks__card">
+                            <div class="card__top">
+                                <div>
+                                    <i><img src="https://assets-netstorage.groww.in/stock-assets/logos/GSTK532540.png" alt=""></i>
+                                   
+                                </div>
+                
+                                <div class="card__heading">
+                                    <h6>TCS</h6>
+                                    <span>Tata Consulting Services Ltd</span>
+                                </div>
+                
+                            </div>
+                
+                            <div class="card__bottom">
+                                <h6><?php echo $pricetcs;?></h6>
+                                <h4><?php echo $percentChanget?></h4>
+                            </div>
+                        </div>
+                
+                        <div class="stocks__card">
+                            <div class="card__top">
+                                <div>
+                                    <i ><img src="https://assets-netstorage.groww.in/stock-assets/logos/GSTK500180.png
+                                        " alt=""></i>
+                                    
+                                </div>
+                
+                                <div class="card__heading">
+                                    <h6>HDFC</h6>
+                                    <span>HDFC BANK</span>
+                                </div>
+                
+                            </div>
+                
+                            <div class="card__bottom">
+                                <h6><?php echo $pricehdfc;?></h6>
+                                <h4><?php echo $percentChangeh;?></h4>
+                            </div>
+                        </div>
+                
+                        <div class="stocks__card">
+                            <div class="card__top">
+                                <div>
+                                    <i><img src="infosys.png" alt=""></i>
+                                   
+                                </div>
+                
+                                <div class="card__heading">
+                                    <h6>INFY</h6>
+                                    <span>Infosys</span>
+                                </div>
+                
+                            </div>
+                
+                            <div class="card__bottom">
+                                <h6><?php echo $priceinfy?></h6>
+                                <h4><?php echo $infyChange?></h4>
+                            </div>
+                        </div>
+                
+                
+                        <div class="stocks__card">
+                            <div class="card__top">
+                                <div>
+                                    <i ><img src="https://assets-netstorage.groww.in/stock-assets/logos/GSTK500875.png" alt=""></i>
+                                  
+                                </div>
+                
+                                <div class="card__heading">
+                                    <h6>ITC</h6>
+                                    <span>ITC</span>
+                                </div>
+                
+                            </div>
+                
+                            <div class="card__bottom">
+                                <h6><?php echo $priceitc;?></h6>
+                                <h4><?php echo $itcChange;?></h4>
+                            </div>
+                        </div>
+<!--                 
+                        <div class="stocks__card">
+                            <div class="card__top">
+                                <div>
+                                    <i ><img src="	https://assets-netstorage.groww.in/stock-assets/logos/GSTK540180.png" alt=""></i>
+                                 
+                                </div>
+                
+                                <div class="card__heading">
+                                    <h6>VBL</h6>
+                                    <span>Varun Bewarages</span>
+                                </div>
+                
+                            </div>
+                
+                            <div class="card__bottom">
+                                <h6><?php echo $pricevbl;?></h6>
+                                <h4><?php echo $vblChange;?></h4>
+                            </div>
+                        </div>
+                
+                
+                        <div class="stocks__card">
+                            <div class="card__top">
+                                <div>
+                                    <i ><img src="	https://assets-netstorage.groww.in/stock-assets/logos/GSTK507685.png" alt=""></i>
+                                  
+                                </div>
+                
+                                <div class="card__heading">
+                                    <h6>Wipro</h6>
+                                    <span>Wipro</span>
+                                </div>
+                
+                            </div>
+                
+                            <div class="card__bottom">
+                                <h6><?php echo $pricewipro?></h6>
+                                <h4><?php echo $wiproChange ?></h4>
+                            </div>
+                        </div>
+                
+                
+                        <div class="stocks__card">
+                            <div class="card__top">
+                                <div>
+                                    <i ><img src="https://assets-netstorage.groww.in/stock-assets/logos/GSTK524208.png" alt=""></i>
+                                   
+                                </div>
+                
+                                <div class="card__heading">
+                                    <h6>AAIND</h6>
+                                    <span>Aarti Industries</span>
+                                </div>
+                
+                            </div>
+                
+                            <div class="card__bottom">
+                                <h6><?php echo $priceaarti ?></h6>
+                                <h4><?php echo $aartiChange ?></h4>
+                            </div>
+                        </div>  -->
+                        <!--
+                        <div class="stocks__card">
+                            <div class="card__top">
+                                <div>
+                                    <i ><img src="		https://assets-netstorage.groww.in/stock-assets/logos/GSTK509480.png" alt=""></i>
+                                   
+                                </div>
+                
+                                <div class="card__heading">
+                                    <h6>BERGERPAINT</h6>
+                                    <span>Berger Paints India Ltd</span>
+                                </div>
+                
+                            </div>
+                
+                            <div class="card__bottom">
+                                <h6>Rs 655</h6>
+                                <h4>(0.73%)</h4>
+                            </div>
+                        </div>
+                        <div class="stocks__card">
+                            <div class="card__top">
+                                <div>
+                                    <i ><img src="https://assets-netstorage.groww.in/stock-assets/logos/GSTK543523.png" alt=""></i>
+                                    
+                                </div>
+                
+                                <div class="card__heading">
+                                    <h6>CAMPUS</h6>
+                                    <span>Campus Activewear Ltd</span>
+                                </div>
+                
+                            </div>
+                
+                            <div class="card__bottom">
+                                <h6>Rs 321</h6>
+                                <h4>(1.73%)</h4>
+                            </div>
+                        </div>
+                        <div class="stocks__card">
+                            <div class="card__top">
+                                <div>
+                                    <i ><img src="	https://assets-netstorage.groww.in/stock-assets/logos/GSTK530965.png" alt=""></i>
+                                    
+                                </div>
+                
+                                <div class="card__heading">
+                                    <h6>IOC</h6>
+                                    <span>Indian Oil Corporation Ltd</span>
+                                </div>
+                
+                            </div>
+                
+                            <div class="card__bottom">
+                                <h6>Rs 88</h6>
+                                <h4>(0.13%)</h4>
+                            </div>
+                        </div>
+                 -->
+                    </div>
+                    
+                    <a href="#" class="button">Show More</a>
+                    
+                </section>
+                
+                
+                <!-- <div class="container">
+                    <div class="row">
+                        <div class="why col-sm-12 col-md-6 col-lg-4 animatable">
+                            <div class="co-box">
+                                <img src="" alt="">
+                                <h6>Reliance</h6>
+                                
+                            </div>
+                        </div>
+    
+                        <div class="why col-sm-12 col-md-6 col-lg-4 animatable">
+                            <div class="co-box">
+                                <img src=""
+                                    alt="">
+                                <h6>Tata Consulting Services</h6>
+                                
+                            </div>
+                        </div>
+                        <div class="why col-sm-12 col-md-6 col-lg-4 animatable">
+                            <div class="co-box">
+                                <img src=""
+                                    alt="">
+                                <h6>HDFC BANK</h6>
+                                
+                            </div>
+                        </div>
+                        <div class="why col-sm-12 col-md-6 col-lg-4 animatable">
+                            <div class="co-box">
+                                <img src=""
+                                    alt="">
+                                <h6>ITC</h6>
+                                
+                            </div>
+                        </div>
+                        <div class="why col-sm-12 col-md-6 col-lg-4 animatable">
+                            <div class="co-box">
+                                <img src="infosys.png"
+                                    alt="">
+                                <h6>Infosys</h6>
+                                
+                            </div>
+                        </div>
+                        <div class="why col-sm-12 col-md-6 col-lg-4 animatable">
+                            <div class="co-box">
+                                <img src=""
+                                    alt="">
+                                <h6>Varun Bewarages Limited</h6>
+                                
+                            </div>
+                        </div>
+                        <div class="why col-sm-12 col-md-6 col-lg-4 animatable">
+                            <div class="co-box">
+                                <img src=""
+                                    alt="">
+                                <h6>Axis Bank</h6>
+                                
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div> -->
+            <section class="footer" id="contact">
+                <div class="box-container">
+                    
+                    <div class="box">
+                        <img src="logo.png" alt="">
+                        <h5>Trade with freedom</h5>
+                        
+                    </div>
+    
+                    <div class="box">
+                        <h5>UsefulLinks</h5>
+                        <a href="#demo"> News</a>
+                        <a href="#demo"> Login</a>
+                        <a href="#demo"> Register</a>
+                       
+    
+                    </div>
+    
+                    <div class="box">
+                        <h5>Pages</h5>
+                     
+                        <a href="#demo"> Term</a>
+                        <a href="#demo"> FAQ</a>
+                        <a href="#demo"> Contact</a>
+                       
+                        </div>
+                    </div>
+                    <h1 class="credit">2023 Copyright Practise2trade</h1>
+                </div>
+    
+            </section>
+            </body>
+            </html>
